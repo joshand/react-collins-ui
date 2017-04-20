@@ -26,6 +26,7 @@ export default () => {
   );
 
   return (
+
     <div className={styles.App}>
       <Helmet {...config.app} />
       <div className={styles.header}>
