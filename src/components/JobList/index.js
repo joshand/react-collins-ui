@@ -1,27 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import styles from './styles.scss';
+import { Table } from 'react-bootstrap';
 
 type Props = { list: Object };
 
+
 const JobList = ({ list }: Props) => (
-  <div className={styles.JobList}>
-    <h4>Job List</h4>
-    <ul>
+
+  <Table bordered hover>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Type</th>
+        <th>Last Result</th>
+        <th>Interval</th>
+      </tr>
+    </thead>
+    <tbody>
       {list.map(job => (
-        <li key={job.id}>
-          <Link to={`/jobs/${job.id}`}>{job.name}</Link>
-        </li>
+        <tr key={job.id}>
+          <td>{job.id}</td>
+          <td><Link to={`/jobs/${job.id}`}>{job.name}</Link></td>
+          <td>{job.image}</td>
+          <td>{job.type}</td>
+          <td>{job.last_result}</td>
+          <td>{job.interval.every} {job.interval.period}</td>
+        </tr>
       ))}
-    </ul>
-  </div>
+
+    </tbody>
+  </Table>
 );
 
 JobList.defaultProps = {
   list: {
     id: '',
     name: '',
+    image: '',
+    last_result: '',
   },
 };
 
