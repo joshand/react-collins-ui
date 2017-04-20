@@ -6,12 +6,14 @@ type Props = { list: Object };
 
 
 const JobList = ({ list }: Props) => (
-  <Table striped bordered hover>
+
+  <Table bordered hover>
     <thead>
       <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Image</th>
+        <th>Type</th>
         <th>Last Result</th>
         <th>Interval</th>
       </tr>
@@ -22,6 +24,7 @@ const JobList = ({ list }: Props) => (
           <td>{job.id}</td>
           <td><Link to={`/jobs/${job.id}`}>{job.name}</Link></td>
           <td>{job.image}</td>
+          <td>{job.type}</td>
           <td>{job.last_result}</td>
           <td>{job.interval.every} {job.interval.period}</td>
         </tr>
