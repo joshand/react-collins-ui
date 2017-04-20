@@ -1,13 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { jQuery } from 'jQuery';
-var bootstrap = require('bootstrap');
 import { Table } from 'react-bootstrap';
-var ReactDOM = require('react-dom');
-// import styles from './styles.scss';
 
 type Props = { list: Object };
-
 
 
 const JobList = ({ list }: Props) => (
@@ -38,6 +33,8 @@ JobList.defaultProps = {
   list: {
     id: '',
     name: '',
+    image: '',
+    last_result: '',
   },
 };
 
