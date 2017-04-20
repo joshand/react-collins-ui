@@ -10,6 +10,7 @@ import routes from '../../routes';
 // Import your global styles here
 import '../../theme/normalize.css';
 import styles from './styles.scss';
+// import NavBar from '../../components/NavBar';
 
 export default () => {
   // Use it when sub routes are added to any route it'll work
@@ -26,17 +27,21 @@ export default () => {
   );
 
   return (
+    <div id="container-fluid">
+      <div id="sidebar" />
 
-    <div className={styles.App}>
-      <Helmet {...config.app} />
-      <div className={styles.header}>
-        <img src={require('./assets/logo.svg')} alt="Logo" role="presentation" />
-        <h1>{config.app.title}</h1>
+      <div className={styles.App}>
+        <Helmet {...config.app} />
+        <div className={styles.header}>
+          <img src={require('./assets/logo.svg')} alt="Logo" role="presentation" />
+          <h1>{config.app.title}</h1>
+        </div>
+        <hr />
+
+        <Switch>
+          {routes.map(route => routeWithSubRoutes(route))}
+        </Switch>
       </div>
-      <hr />
-      <Switch>
-        {routes.map(route => routeWithSubRoutes(route))}
-      </Switch>
     </div>
   );
 };

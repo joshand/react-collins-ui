@@ -4,8 +4,9 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import serialize from 'serialize-javascript';
 import _ from 'lodash';
-
+import NavBar from '../components/NavBar';
 import type { Store } from '../types';
+
 
 type Props = { store: Store, htmlContent?: string };
 
@@ -67,7 +68,11 @@ const Html = ({ store, htmlContent }: Props) => {
             : null
         }
       </head>
+
       <body>
+        <div id="navbar">
+          <NavBar />
+        </div>
         <div
           id="react-view"
           // Rendering the route, which passed from server-side
