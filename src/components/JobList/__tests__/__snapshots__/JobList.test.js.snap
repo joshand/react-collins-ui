@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobList /> renders 1`] = `
+<div
+  className={undefined}
+>
+  <h4>
+    Job List
+  </h4>
+  <ul>
+    <li>
+      <a
+        href="/JobInfo/1"
+        onClick={[Function]}
+      >
+        mock job 1
+      </a>
+    </li>
+  </ul>
+</div>
+`;
