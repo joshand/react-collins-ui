@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobInfo /> renders an error if loading failed 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Oops, Failed to load info!
+  </p>
+</div>
+`;
+
+exports[`<JobInfo /> renders the <UserCard /> if loading was successful 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <h4>
+      Job Card
+    </h4>
+    <ul>
+      <li>
+        Name:
+        mock job 1
+      </li>
+      <li>
+        Description:
+        007
+      </li>
+      <li>
+        Email:
+        test@gmail.com
+      </li>
+      <li>
+        Last Result:
+        Passed
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<JobInfo /> renders the loading status if data invalid 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
+
+exports[`<JobInfo /> renders the loading status if requesting data 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
