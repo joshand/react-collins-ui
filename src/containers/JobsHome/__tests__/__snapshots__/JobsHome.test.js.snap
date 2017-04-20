@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobsHome /> renders an error if loading failed 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Oops, Failed to load list!
+  </p>
+</div>
+`;
+
+exports[`<JobsHome /> renders the <JobList /> if loading was successful 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <h4>
+      Job List
+    </h4>
+    <ul>
+      <li>
+        <a
+          href="/JobInfo/1"
+          onClick={[Function]}
+        >
+          Job1
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<JobsHome /> renders the loading status if data invalid 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
+
+exports[`<JobsHome /> renders the loading status if requesting data 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
