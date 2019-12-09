@@ -2823,12 +2823,6 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
-file-loader@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.11.1.tgz#6b328ee1234a729e4e47d36375dd6d35c0e1db84"
-  dependencies:
-    loader-utils "^1.0.2"
-
 file-type@^3.1.0, file-type@^3.8.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-3.9.0.tgz#257a078384d1db8087bc449d107d52a52672b9e9"
@@ -4035,10 +4029,6 @@ istanbul-reports@^1.0.0:
   resolved "https://registry.yarnpkg.com/istanbul-reports/-/istanbul-reports-1.0.1.tgz#9a17176bc4a6cbebdae52b2f15961d52fa623fbc"
   dependencies:
     handlebars "^4.0.3"
-
-jQuery@^1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/jQuery/-/jQuery-1.7.4.tgz#f32dc5c85a7044ee864b4443b9ee45f9478ba137"
 
 jest-changed-files@^19.0.2:
   version "19.0.2"
@@ -6120,6 +6110,10 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^0.2.2"
 
+react-sidebar@^2.3.1:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/react-sidebar/-/react-sidebar-2.3.2.tgz#ec140bea8a6f5fa3d8ea7a56479665b44cf4f9cf"
+
 react-test-renderer@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.5.4.tgz#d4ebb23f613d685ea8f5390109c2d20fbf7c83bc"
@@ -6550,9 +6544,9 @@ send@0.15.1:
     range-parser "~1.2.0"
     statuses "~1.3.1"
 
-serialize-javascript@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.3.0.tgz#86a4f3752f5c7e47295449b0bbb63d64ba533f05"
+serialize-javascript@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.1.tgz#952907a04a3e3a75af7f73d92d15e233862048b2"
 
 serve-favicon@^2.4.2:
   version "2.4.2"
